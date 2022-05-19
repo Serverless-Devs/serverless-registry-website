@@ -1,5 +1,10 @@
 # Serverless Regsitry Website
 
+<p align="center">
+  <span><b><a href="./README.md">中文</a> ｜ <a href="./README_en.md">English</a></b></span><br>
+</p>
+
+
 Serverless Regsitry Website 是 Serverless Regsitry 项目的官方网站：
 
 ![image](https://user-images.githubusercontent.com/21079031/169323465-a35ef7d0-636c-4068-8860-8fc69b85b490.png)
