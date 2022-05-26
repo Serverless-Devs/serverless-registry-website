@@ -439,6 +439,7 @@
                 });
 
                 const Alist = sourceContent.match(/\[.*?\]\(.*?\)/gm)
+                try{
                 for (let i = 0; i < Alist.length; i++) {
                     if (!Alist[i].includes("](http")) {
                         console.log(Alist[i])
@@ -451,6 +452,7 @@
 
                     }
                 }
+                }catch(e){}
 
                 var md = markdownit({
                     html: true,
