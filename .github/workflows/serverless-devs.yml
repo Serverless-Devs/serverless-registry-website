@@ -14,5 +14,7 @@ jobs:
           node-version: 12
           registry-url: https://registry.npmjs.org/
       - run: npm install -g @serverless-devs/s
+      - run: rm -rf .git
+      - run: rm -rf .github
       - run: s config add --AccessKeyID ${{secrets.ACCESSKEYID}}  --AccessKeySecret ${{secrets.ACCESSKEYSECRET}}
       - run: s deploy -t s.oss.yaml 
