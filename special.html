@@ -273,7 +273,7 @@
         for (let i = 0; i < Object.keys(specialList).length; i++) {
             const tempId = Object.keys(specialList)[i]
             const xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-            xmlhttp.open("POST", 'http://registry.devsapp.cn/package/special/detail', false);
+            xmlhttp.open("POST", 'https://registry.devsapp.cn/package/special/detail', false);
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                     let itemString = `<div class="col-lg-12 wow fadeInUp">
@@ -326,7 +326,7 @@
 
     function getSpecial() {
         const xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-        xmlhttp.open("GET", 'http://registry.devsapp.cn/package/special', false);
+        xmlhttp.open("GET", 'https://registry.devsapp.cn/package/special', false);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                 let tempHTML = ''
