@@ -270,7 +270,7 @@
     function getSpecialDetail() {
         const thisid = Number(getQueryString("id"))
         const xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-        xmlhttp.open("GET", 'https://registry.devsapp.cn/console/applications?type=fc', false);
+        xmlhttp.open("GET", 'https://registry.devsapp.cn/console/applications?type=registry', false);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                 let itemString = ``
@@ -319,7 +319,7 @@
     function getSpecialInfo() {
         const thisid = Number(getQueryString("id"))
         const xmlhttp = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject("Microsoft.XMLHTTP");
-        xmlhttp.open("GET", 'https://registry.devsapp.cn/console/tabs?type=fc', false);
+        xmlhttp.open("GET", 'https://registry.devsapp.cn/console/tabs?type=registry', false);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
                 const result = JSON.parse(xmlhttp.responseText).Response
